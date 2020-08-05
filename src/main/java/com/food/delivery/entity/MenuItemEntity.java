@@ -3,6 +3,7 @@ package com.food.delivery.entity;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,6 +25,9 @@ public class MenuItemEntity implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long menuId;
+	
+	@Column(name="restaurant_id")
+	private long restaurantId;
 
 	private String name;
 	

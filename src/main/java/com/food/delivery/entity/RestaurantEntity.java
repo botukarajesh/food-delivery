@@ -30,6 +30,9 @@ public class RestaurantEntity implements Serializable {
 	@Column(name="restaurant_id")
 	private long restaurantId;
 
+	@Column(name="order_id")
+	private long orderId;
+
 	private String name;
 	
 	private String typeOfRestaurant;  //AC/NON-AC/etc..
